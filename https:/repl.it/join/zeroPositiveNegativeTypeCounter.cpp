@@ -5,12 +5,15 @@ using namespace std;
 //The Problem:Trying to figure out positive numbers from negative ones and zeros and outputting it at the end
 //General approach: do if statements to check for each input and add to the total
 //Main issues: Checking if the value is a number 
+
 int negatives = 0,
     positives = 0,
     zeros = 0, 
     valuesEntered;
 string input;
 //Instantiating variables
+
+
 bool isNum(string input){
     regex numbers ("[-+]?([0-9]*[0-9]+|[0-9]+)");
     //regex numbers it checks all characters to see if they are between 0-9 (so are numbers)
@@ -21,6 +24,8 @@ bool isNum(string input){
     return false;
     //if not then false
 }
+
+
 void userInput(){
   cin >> input;
   //Taking input from the user
@@ -37,7 +42,7 @@ void userInput(){
     //Adding to the total number of values entered
     int inputInt = stoi(input);
     //converting it to a int
-    if(stoi(input) == 0){
+    if(inputInt == 0){
       zeros++;
       //Adding to the number of zeros
       userInput();
@@ -57,6 +62,8 @@ void userInput(){
   }
 
 }
+
+
 int main() {
     cout << "Please enter a valid numeric, or “Q” to finish:\n";
     //inital message then call for user input
