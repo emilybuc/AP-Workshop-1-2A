@@ -1,0 +1,36 @@
+#include <iostream>
+#include <ctime>
+using namespace std;
+//repl.it repo:https://repl.it/join/tcxdwdid-emilybuck
+//The Problem: Working out how many years someone has to work from their age and their retirement age
+//General approach:Convert inputs to ints then workout current year, workout the time inbetween their age and retirement age, and add that to the current year
+//Main issues: Working out the current year 
+
+int main() {
+  string currentAge, retirementAge;
+  // Instantiating variables
+
+  cout << "Please enter your current age? ";
+  cin >> currentAge;
+  cout << "At what age would you like to retire? ";
+  cin >> retirementAge;
+  //Inputs 
+
+  int currentAgeInt = stoi(currentAge);
+  int retirementAgeInt = stoi(retirementAge);
+  //Converting inputs to ints
+
+  time_t now = time(0);
+  tm * ltm = localtime(&now);
+  int currentYear = 1900 + ltm->tm_year;
+  //Working out current year
+
+  int yearsWorking = retirementAgeInt - currentAgeInt;
+  //Working out the amount of years they have to work
+  int retirementYear = yearsWorking + currentYear;
+  //Add that to the current year to work out the retirement year
+
+  cout << "\nThe current year is " << currentYear <<", can retire in "<< retirementYear <<"; you have "<< yearsWorking<<" years remaining. \n";
+  //Concatinating to create the final output 
+  return 0;
+}
