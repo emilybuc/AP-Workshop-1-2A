@@ -5,7 +5,6 @@ using namespace std;
 //The Problem:Trying to figure out positive numbers from negative ones and zeros and outputting it at the end
 //General approach: do if statements to check for each input and add to the total
 //Main issues: Checking if the value is a number 
-//Update Readme
 int negatives = 0,
     positives = 0,
     zeros = 0, 
