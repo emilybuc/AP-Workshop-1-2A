@@ -33,4 +33,16 @@ The code conforms to the spec and has been tested to work
 no additional revisions have been made
 https://repl.it/join/aqegyqja-emilybuck
 
+## Low & Largest Numbers
+The code conforms to the spec and has been tested to work
+no additional revisions have been made
+https://repl.it/join/sunkbuzt-emilybuck
+
+## characterTypeChecker
+The code conforms to the spec and has been tested to work
+no additional revisions have been made
+https://repl.it/join/wdmubctd-emilybuck
+
+
+
 
