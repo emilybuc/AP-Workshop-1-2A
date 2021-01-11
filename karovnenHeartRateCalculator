@@ -1,10 +1,9 @@
 #include <iostream>
 using namespace std;
 //repl.it repo:https://repl.it/join/lesqcvnf-emilybuck
-//The Problem:
-//General approach:
-//Main issues:
-//Update Readme
+//The Problem:Working out karvonen heart rate at different intensities
+//General approach: Use a for loop to calculate bpm at different intensities
+//Main issues: Intensity needs to be in a float
 
 int main() {
   int age, restingPulse, bpm;
